@@ -38,6 +38,7 @@ struct AnimeList: View {
     
     @ObservedObject var viewModel: ViewModel
  
+    
     var body: some View{
         List {
             ForEach(viewModel.animeData,id: \.id){index in

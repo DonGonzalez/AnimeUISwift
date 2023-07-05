@@ -24,6 +24,7 @@ class Service {
             completion(.failure(HttpStatusCode.badURL))
             return
         }
+        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error as? URLError {
                 completion(Result.failure(HttpStatusCode.url(error)))

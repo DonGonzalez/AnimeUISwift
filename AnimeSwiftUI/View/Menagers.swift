@@ -12,6 +12,7 @@ struct Menagers: ViewModifier {
     var navigationTitle:String
     private static let navigationManager = NavigationManager()
 
+    
     func body(content: Content) -> some View {
         content
             .navigationTitle(navigationTitle)

@@ -8,4 +8,5 @@
 import Foundation
 struct SingleAnime: Decodable {
     var data: AnimeData
+    
 }

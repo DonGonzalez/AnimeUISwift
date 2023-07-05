@@ -14,6 +14,7 @@ enum Endpoint {
     case singleEpisodes (id: Int)
     case searchAnime (searchText: String, sort: String, filter: String)
     
+    
     var value: String {
         switch self {
             

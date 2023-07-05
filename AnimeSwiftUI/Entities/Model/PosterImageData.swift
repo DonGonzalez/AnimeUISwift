@@ -12,4 +12,5 @@ struct PosterImageData: Decodable {
     let small: String
     let medium: String
     let original: String
+    
 }

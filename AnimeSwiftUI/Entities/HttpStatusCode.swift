@@ -15,6 +15,7 @@ enum HttpStatusCode: Error, CustomStringConvertible {
     case parsing(DecodingError?)
     case unknown
     
+    
     var localizedDescription: String {
         // user description
         switch self {

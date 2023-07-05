@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+
 class NavigationManager: ObservableObject {
     
 }

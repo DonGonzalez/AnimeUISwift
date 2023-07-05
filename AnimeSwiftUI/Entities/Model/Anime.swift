@@ -8,4 +8,5 @@
 import Foundation
 struct Anime: Decodable {
     var data: [AnimeData]
+    
 }

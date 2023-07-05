@@ -14,4 +14,5 @@ struct AttributesData: Decodable {
     let canonicalTitle: String?
     let episodeCount: Int?
     let posterImage: PosterImageData
+    
 }
