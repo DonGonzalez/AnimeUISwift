@@ -18,8 +18,6 @@ import SwiftUI
          init() {
              getDataFromAnime()
          }
-         
-         
         func getDataFromAnime(){
             Service.shared.reqestAnimeData(url: testUrl) {[weak self] result in
                
