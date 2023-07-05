@@ -23,5 +23,6 @@ struct Menagers: ViewModifier {
                 for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .environmentObject(Self.navigationManager)
+        
     }
 }
