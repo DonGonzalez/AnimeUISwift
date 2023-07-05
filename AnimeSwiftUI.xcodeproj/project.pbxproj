@@ -62,6 +62,7 @@
 		A1A2AF332A55E7EA0066C529 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		A1A2AF352A55E8650066C529 /* Menagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menagers.swift; sourceTree = "<group>"; };
 		A1A2AF372A55F57F0066C529 /* MessageAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlert.swift; sourceTree = "<group>"; };
+		A1A2AF392A5602FD0066C529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1EF19302A3DC656004B2A3A /* AnimeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF19332A3DC656004B2A3A /* AnimeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1EF19352A3DC656004B2A3A /* MainAnimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAnimeView.swift; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 		A1EF19322A3DC656004B2A3A /* AnimeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A1A2AF392A5602FD0066C529 /* Info.plist */,
 				A1A2AF312A55D2D10066C529 /* ModelView */,
 				A1A2AF302A55D2C30066C529 /* Entities */,
 				A1A2AF2F2A55D2AE0066C529 /* View */,
@@ -515,7 +517,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AnimeSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -543,7 +545,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = AnimeSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
