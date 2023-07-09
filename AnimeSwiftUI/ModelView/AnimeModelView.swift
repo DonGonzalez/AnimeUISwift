@@ -10,7 +10,7 @@ import SwiftUI
 
      class ViewModel: ObservableObject {
         
-        let testUrl: URL? = URL(string: "https://kitsu.io/api/edge/anime")
+       // let testUrl: URL? = URL(string: "https://kitsu.io/api/edge/anime")
         
         @Published var animeData = [AnimeData]()
          @Published var messageError: MessageErrorType?
@@ -19,7 +19,7 @@ import SwiftUI
              getDataFromAnime()
          }
         func getDataFromAnime(){
-            Service.shared.reqestAnimeData(url: testUrl) {[weak self] result in
+            Service.shared.reqestAnimeData(url: Endpoint.moreAnime(offset: 0, sort: "", filter: "", search: "").url) {[weak self] result in
                
                     switch result {
                     case .failure(let error):
