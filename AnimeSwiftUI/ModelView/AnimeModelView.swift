@@ -14,9 +14,12 @@ import SwiftUI
         
         @Published var animeData = [AnimeData]()
          @Published var messageError: MessageErrorType?
+         @Published var showingAlert: Bool = false
+// popup struct
+         @Published var popupStruct: PopupStruct = PopupStruct(type: .warning, title: "", message: "")
          
          init() {
-             getDataFromAnime()
+             self.getDataFromAnime()
          }
         func getDataFromAnime(){
             Service.shared.reqestAnimeData(url: Endpoint.moreAnime(offset: 0, sort: "", filter: "", search: "").url) {[weak self] result in
@@ -24,13 +27,18 @@ import SwiftUI
                     switch result {
                     case .failure(let error):
                         self?.messageError = MessageErrorType.failure(error.description)
-                        return print(MessageErrorType.failure(error.description))
+                        self?.showingAlert = true
+                        self?.popupStruct = PopupStruct(type: .warning, title: "Warning", message: "test")
+                        return
+                        
                     case .success(let result):
                         DispatchQueue.main.async {
                             self?.animeData = result.data
                             self?.messageError = MessageErrorType.success("Status 200")
+                            self?.showingAlert = true
                         }
                     }
             }
     }
+ 
 }

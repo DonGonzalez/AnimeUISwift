@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct AnimeSwiftUIApp: App {
+    
+    @StateObject var popupMenager = PopupMenager()
+    
     var body: some Scene {
         WindowGroup {
             MainAnimeView()
-            
+               .environmentObject(popupMenager)
         }
     }
 }

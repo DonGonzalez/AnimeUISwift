@@ -25,7 +25,7 @@ struct AnimeDetailView: View {
                         .multilineTextAlignment(.leading)
                         .padding(CGFloat(10))
                 }
-                
+             
             }.modifier(Menagers(navigationTitle: "AnimeDetail"))
         
     }
